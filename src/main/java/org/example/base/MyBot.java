@@ -26,32 +26,29 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
         return BOT_TOKEN;
     }
 
+    String step = "/start";
+
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()) {
             Message message = update.getMessage();
             Long chatId = message.getChatId();
+            List<KeyboardRow> buttonRow = new ArrayList<>();
+            String text = message.getText();
             if (message.hasText()) {
-                String text = message.getText();
-
-                if (text.equals("/start")) {
+                step = BaseBot.START;
+                if (text.equals(BaseBot.START)) {
                     myExecute(
-                            replyKeyboardMarkup(List.of("Byurtma berish", "Buyurtmalarim", "Sozlamalr", "Biz haqimizda", "Fikr qolditing"), 2), null, "Welcome to bot" + message.getChat().getFirstName(), chatId);
-                } else if (text.equals("Byurtma berish")) {
-                    myExecute(replyKeyboardMarkup(List.of("Joy bant qilish", "Ovqat dastavka"), 1), null, null, chatId);
+                            replyKeyboardMarkup(List.of(BaseBot.BUYURTMA, BaseBot.BUYURTMALARIM, BaseBot.BIZHAQIMIZDA,
+                                    BaseBot.FIKR, BaseBot.SOZLAMALAR), 2), null, "Welcome to bot  " + message.getChat().getFirstName(), chatId);
+
+                } else if (text.equals(BaseBot.BUYURTMA)) {
+                    myExecute(replyKeyboardMarkup(List.of(BaseBot.PLACE,BaseBot.FOODS), 1), null, "Tanlovni amalga oshiring", chatId);
+                } else if (text.equals(BaseBot.BUYURTMALARIM)) {
+
                 }
             }
         }
-    }
-
-    @Override
-    public void onUpdatesReceived(List<Update> updates) {
-        super.onUpdatesReceived(updates);
-    }
-
-    @Override
-    public void onRegister() {
-        super.onRegister();
     }
 
     private ReplyKeyboardMarkup replyKeyboardMarkup(List<String> menuItems, int n) {
@@ -76,7 +73,9 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
 
     private void myExecute(ReplyKeyboardMarkup r, InlineKeyboardMarkup i, String text, Long chatId) {
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText(text);
+
+            sendMessage.setText(text);
+
         sendMessage.setChatId(chatId.toString());
         sendMessage.setReplyMarkup(r == null ? i : r);
         try {
