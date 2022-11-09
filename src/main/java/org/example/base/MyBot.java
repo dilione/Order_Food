@@ -67,8 +67,8 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
                     } catch (MalformedURLException e) {
                         throw new RuntimeException(e);
                     }
-                    sendPhoto("Milliy taomlar","FastFood","Ichimliklar","Non","milliy",
-                            "fast","ichimlik","non",url,chatId);
+                    sendPhoto("Milliy taomlar","FastFood","Ichimliklar","Non","Salatlar","milliy",
+                            "fast","ichimlik","non","salat",url,chatId);
                 }
             }
         }
@@ -144,15 +144,17 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
 
     }
 
-    private void sendPhoto(String txt,String txt2,String txt3,String txt4, String callBackData,String callBackData2,String callBackData3,String callBackData4, URL url, Long chatId) {
+    private void sendPhoto(String txt,String txt2,String txt3,String txt4,String txt5, String callBackData,String callBackData2,String callBackData3,String callBackData4,String callBackData5, URL url, Long chatId) {
         InputStream inputStream;
         List<List<InlineKeyboardButton>> keys = new ArrayList<>();
         List<InlineKeyboardButton> rowInline = new ArrayList<>();
+        List<InlineKeyboardButton> rowInline2 = new ArrayList<>();
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         InlineKeyboardButton inlineKeyboardButton = new InlineKeyboardButton();
         InlineKeyboardButton inlineKeyboardButton1 = new InlineKeyboardButton();
         InlineKeyboardButton inlineKeyboardButton2 = new InlineKeyboardButton();
         InlineKeyboardButton inlineKeyboardButton3 = new InlineKeyboardButton();
+        InlineKeyboardButton inlineKeyboardButton4 = new InlineKeyboardButton();
 
         inlineKeyboardButton.setText(txt);
         inlineKeyboardButton.setCallbackData(callBackData);
@@ -162,11 +164,15 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
         inlineKeyboardButton2.setCallbackData(callBackData3);
         inlineKeyboardButton3.setText(txt4);
         inlineKeyboardButton3.setCallbackData(callBackData4);
+        inlineKeyboardButton4.setText(txt5);
+        inlineKeyboardButton4.setCallbackData(callBackData5);
         rowInline.add(inlineKeyboardButton);
         rowInline.add(inlineKeyboardButton1);
         rowInline.add(inlineKeyboardButton2);
-        rowInline.add(inlineKeyboardButton3);
+        rowInline2.add(inlineKeyboardButton3);
+        rowInline2.add(inlineKeyboardButton4);
         keys.add(rowInline);
+        keys.add(rowInline2);
         inlineKeyboardMarkup.setKeyboard(keys);
         try {
             inputStream = url.openStream();
