@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4fc9641-2316-4031-ab2f-43e46a63fd9e" name="Changes" comment="upload base">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dataBase/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/recurs/user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="a4fc9641-2316-4031-ab2f-43e46a63fd9e" name="Changes" comment="upload baseff" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +120,7 @@
       <workItem from="1667825778955" duration="688000" />
       <workItem from="1667879123345" duration="680000" />
       <workItem from="1667883285499" duration="18845000" />
-      <workItem from="1667906340728" duration="2218000" />
+      <workItem from="1667906340728" duration="3268000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1667825893927</created>
@@ -165,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667894335693</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="upload baseff">
+      <created>1667976464543</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667976464543</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +186,7 @@
     <MESSAGE value="r push" />
     <MESSAGE value="upload" />
     <MESSAGE value="upload base" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload base" />
+    <MESSAGE value="upload baseff" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload baseff" />
   </component>
 </project>
