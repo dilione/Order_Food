@@ -1,0 +1,184 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,9 +5,13 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a4fc9641-2316-4031-ab2f-43e46a63fd9e" name="Changes" comment="upload">
++      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Category.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BaseService.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/BaseBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/BaseBot.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -54,6 +58,16 @@
+         </option>
+       </RecentBranches>
+     </option>
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/Main.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/base/BaseBot.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/model/Product.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/model/User.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" root0="FORCE_HIGHLIGHTING" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -63,19 +77,19 @@
+   <component name="ProjectViewState">
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "C:/Users/user",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Order_Food&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+@@ -90,17 +104,6 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration default="true" type="JetRunConfigurationType">
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+-      <option name="filePath" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+     <recent_temporary>
+       <list>
+         <item itemvalue="Application.Main" />
+@@ -118,6 +121,9 @@
+       <workItem from="1667825778955" duration="688000" />
+       <workItem from="1667879123345" duration="680000" />
+       <workItem from="1667883285499" duration="10342000" />
++      <workItem from="1667896866251" duration="398000" />
++      <workItem from="1667897684538" duration="46000" />
++      <workItem from="1667897791953" duration="731000" />
+     </task>
+     <task id="LOCAL-00001" summary="git">
+       <created>1667825893927</created>
+Index: src/main/java/org/example/model/Category.java
+===================================================================
+diff --git a/src/main/java/org/example/model/Category.java b/src/main/java/org/example/model/Category.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/org/example/model/Category.java	
+@@ -0,0 +1,5 @@
++package org.example.model;
++
++public class Category {
++
++}
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -8,12 +8,6 @@
+     <artifactId>Order_Food</artifactId>
+     <version>1.0-SNAPSHOT</version>
+ 
+-    <properties>
+-        <maven.compiler.source>18</maven.compiler.source>
+-        <maven.compiler.target>18</maven.compiler.target>
+-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-    </properties>
+-
+     <dependencies>
+         <!-- https://mvnrepository.com/artifact/org.telegram/telegrambots -->
+         <dependency>
+@@ -32,11 +26,17 @@
+             <artifactId>lombok</artifactId>
+             <version>1.18.24</version>
+         </dependency>
++        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+         <dependency>
+             <groupId>com.google.code.gson</groupId>
+             <artifactId>gson</artifactId>
+-            <version>2.10</version>
++            <version>2.9.1</version>
+         </dependency>
++
+     </dependencies>
+-
++    <properties>
++        <maven.compiler.source>18</maven.compiler.source>
++        <maven.compiler.target>18</maven.compiler.target>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++    </properties>
+ </project>
+\ No newline at end of file
+Index: src/main/java/org/example/service/BaseService.java
+===================================================================
+diff --git a/src/main/java/org/example/service/BaseService.java b/src/main/java/org/example/service/BaseService.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/org/example/service/BaseService.java	
+@@ -0,0 +1,23 @@
++package org.example.service;
++
++import org.example.model.Category;
++import org.example.model.Product;
++
++import java.util.ArrayList;
++import java.util.List;
++
++public class BaseService<T,R> {
++
++    List<Category> categoryList=new ArrayList<>();
++    List<Product> productList=new ArrayList<>();
++
++    boolean add(T t) {
++        return false;
++    }
++
++    List<R> getList() {
++        return null;
++    }
++
++
++}
