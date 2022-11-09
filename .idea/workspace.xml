@@ -136,7 +136,8 @@
       <workItem from="1667970741846" duration="8325000" />
       <workItem from="1667983493630" duration="3906000" />
       <workItem from="1667987444377" duration="1096000" />
-      <workItem from="1667988588339" duration="1445000" />
+      <workItem from="1667988588339" duration="1532000" />
+      <workItem from="1667993499078" duration="3338000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1667825893927</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667988197052</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update button ww">
+      <created>1667991816211</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667991816211</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +211,7 @@
     <MESSAGE value="upload" />
     <MESSAGE value="add fild" />
     <MESSAGE value="update button" />
-    <option name="LAST_COMMIT_MESSAGE" value="update button" />
+    <MESSAGE value="update button ww" />
+    <option name="LAST_COMMIT_MESSAGE" value="update button ww" />
   </component>
 </project>

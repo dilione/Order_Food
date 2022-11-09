@@ -59,7 +59,7 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
                     } catch (MalformedURLException e) {
                         throw new RuntimeException(e);
                     }
-                    sendPhoto("Joy band qilish","Bo'sh joylar","order","emptyPlace",url,chatId);
+                    sendPhoto("Joy band qilish","Bo'sh joylar",ORDER,EMPTY_PLACE,url,chatId);
                 } else if (text.equals(BaseBot.FOODS)) {
                     URL url;
                     try {
@@ -67,10 +67,37 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
                     } catch (MalformedURLException e) {
                         throw new RuntimeException(e);
                     }
-                    sendPhoto("Milliy taomlar","FastFood","Ichimliklar","Non","Salatlar","milliy",
-                            "fast","ichimlik","non","salat",url,chatId);
+                    sendPhoto("Milliy taomlar","FastFood","Ichimliklar","Non","Salatlar",MILLIY,
+                            FAST,ICHIMLIK,NON,SALAT,url,chatId);
                 }
             }
+        } else if (update.hasCallbackQuery()) {
+            String chatId = update.getCallbackQuery().getFrom().getId().toString();
+            String data = update.getCallbackQuery().getData();
+            if (data.equals(ORDER)){
+
+            } else if (data.equals(EMPTY_PLACE)) {
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setText("Bo'sh joy yo'q");
+                sendMessage.setChatId(chatId);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            } else if (data.equals(MILLIY)) {
+
+            } else if (data.equals(FAST)) {
+
+            } else if (data.equals(ICHIMLIK)) {
+
+            } else if (data.equals(NON)) {
+
+            } else if (data.equals(SALAT)) {
+
+            }
+
         }
     }
 
@@ -106,13 +133,6 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private String getKey(Map<String, InlineKeyboardMarkup> map) {
-        for (Map.Entry<String, InlineKeyboardMarkup> pair : map.entrySet()) {
-            return pair.getKey();
-        }
-        return null;
     }
     private void sendPhoto(String txt,String txt2, String callBackData,String callBackData2, URL url, Long chatId) {
         InputStream inputStream;
