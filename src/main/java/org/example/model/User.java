@@ -1,10 +1,17 @@
 package org.example.model;
 
-import java.util.List;
+import lombok.*;
 
+import java.util.List;
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@ToString
 public class User {
     private long chatId;
     private String step;
     private String name;
+    private String msg;
     private List<Product> products;
 }

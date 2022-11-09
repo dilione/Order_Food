@@ -1,5 +1,7 @@
 package org.example.base;
 
+import org.example.model.User;
+import org.example.service.UserService;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -15,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 public class MyBot extends TelegramLongPollingBot implements BaseBot {
-
+ UserService userService = new UserService();
     @Override
     public String getBotUsername() {
         return BOT_USERNAME;
@@ -26,23 +28,22 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
         return BOT_TOKEN;
     }
 
-    String step = "/start";
+
 
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()) {
             Message message = update.getMessage();
             Long chatId = message.getChatId();
-            List<KeyboardRow> buttonRow = new ArrayList<>();
+                User user=userService.saveUser(chatId);
             String text = message.getText();
             if (message.hasText()) {
-                step = BaseBot.START;
                 if (text.equals(BaseBot.START)) {
                     myExecute(
                             replyKeyboardMarkup(List.of(BaseBot.BUYURTMA, BaseBot.BUYURTMALARIM, BaseBot.BIZHAQIMIZDA,
                                     BaseBot.FIKR, BaseBot.SOZLAMALAR), 2), null, "Welcome to bot  " + message.getChat().getFirstName(), chatId);
-
-                } else if (text.equals(BaseBot.BUYURTMA)) {
+                      user.setStep(BaseBot.BUYURTMA);
+                } else if (user.getStep().equals(BaseBot.BUYURTMA)) {
                     myExecute(replyKeyboardMarkup(List.of(BaseBot.PLACE,BaseBot.FOODS), 1), null, "Tanlovni amalga oshiring", chatId);
                 } else if (text.equals(BaseBot.BUYURTMALARIM)) {
 
@@ -91,5 +92,6 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
         }
         return null;
     }
+
 }
 
