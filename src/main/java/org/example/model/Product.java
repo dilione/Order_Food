@@ -1,16 +1,19 @@
 package org.example.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
-    private int categoryId;
     private  String name;
+    private String type;
     private double price;
     private int amount;
-    private int id;
+    private String url;
+    private String content;
 }

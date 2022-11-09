@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4fc9641-2316-4031-ab2f-43e46a63fd9e" name="Changes" comment="upload baseff" />
+    <list default="true" id="a4fc9641-2316-4031-ab2f-43e46a63fd9e" name="Changes" comment="upload">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_8_2022_2_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_8_2022_2_10_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_8_2022_2_10_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_8_2022_2_10_PM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_8_2022_10_01_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_8_2022_10_01_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_8_2022_12_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_8_2022_12_59_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,19 +81,26 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\collection\maven_vs_addition_liblaries\Order_Food1\src\main" />
-      <recent name="D:\collection\maven_vs_addition_liblaries\Order_Food1\src\main\java\org\example" />
-    </key>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ProductService">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Order_Food" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.dataBase.*" />
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service.ProductService" />
+      <module name="Order_Food" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductService" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -119,8 +136,9 @@
       <updated>1667824842012</updated>
       <workItem from="1667825778955" duration="688000" />
       <workItem from="1667879123345" duration="680000" />
-      <workItem from="1667883285499" duration="18845000" />
-      <workItem from="1667906340728" duration="3268000" />
+      <workItem from="1667883285499" duration="10342000" />
+      <workItem from="1667900573749" duration="1048000" />
+      <workItem from="1667970741846" duration="7641000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1667825893927</created>
@@ -150,21 +168,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667883645252</updated>
     </task>
-    <task id="LOCAL-00005" summary="upload base">
-      <created>1667894335693</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1667894335693</updated>
-    </task>
-    <task id="LOCAL-00006" summary="upload baseff">
-      <created>1667976464543</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1667976464543</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,8 +189,6 @@
     <MESSAGE value="git" />
     <MESSAGE value="r push" />
     <MESSAGE value="upload" />
-    <MESSAGE value="upload base" />
-    <MESSAGE value="upload baseff" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload baseff" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload" />
   </component>
 </project>
