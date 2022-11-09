@@ -55,11 +55,20 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
                 } else if (text.equals(BaseBot.PLACE)) {
                     URL url = null;
                     try {
-                        url = new URL("https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_1.jpg");
+                        url = new URL(URL_PLACE);
                     } catch (MalformedURLException e) {
                         throw new RuntimeException(e);
                     }
-                    sendPhoto("Joy band qilish","Bo'sh joylar","order","emtyPlace",url,chatId);
+                    sendPhoto("Joy band qilish","Bo'sh joylar","order","emptyPlace",url,chatId);
+                } else if (text.equals(BaseBot.FOODS)) {
+                    URL url;
+                    try {
+                        url = new URL(URL_FOODS);
+                    } catch (MalformedURLException e) {
+                        throw new RuntimeException(e);
+                    }
+                    sendPhoto("Milliy taomlar","FastFood","Ichimliklar","Non","milliy",
+                            "fast","ichimlik","non",url,chatId);
                 }
             }
         }
@@ -119,6 +128,44 @@ public class MyBot extends TelegramLongPollingBot implements BaseBot {
         inlineKeyboardButton.setCallbackData(callBackData);
         rowInline.add(inlineKeyboardButton);
         rowInline.add(inlineKeyboardButton1);
+        keys.add(rowInline);
+        inlineKeyboardMarkup.setKeyboard(keys);
+        try {
+            inputStream = url.openStream();
+            InputFile inputFile = new InputFile(inputStream, String.valueOf(url));
+            SendPhoto sendPhoto = new SendPhoto();
+            sendPhoto.setPhoto(inputFile);
+            sendPhoto.setChatId(chatId.toString());
+            sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+            execute(sendPhoto);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    private void sendPhoto(String txt,String txt2,String txt3,String txt4, String callBackData,String callBackData2,String callBackData3,String callBackData4, URL url, Long chatId) {
+        InputStream inputStream;
+        List<List<InlineKeyboardButton>> keys = new ArrayList<>();
+        List<InlineKeyboardButton> rowInline = new ArrayList<>();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        InlineKeyboardButton inlineKeyboardButton = new InlineKeyboardButton();
+        InlineKeyboardButton inlineKeyboardButton1 = new InlineKeyboardButton();
+        InlineKeyboardButton inlineKeyboardButton2 = new InlineKeyboardButton();
+        InlineKeyboardButton inlineKeyboardButton3 = new InlineKeyboardButton();
+
+        inlineKeyboardButton.setText(txt);
+        inlineKeyboardButton.setCallbackData(callBackData);
+        inlineKeyboardButton1.setText(txt2);
+        inlineKeyboardButton1.setCallbackData(callBackData2);
+        inlineKeyboardButton2.setText(txt3);
+        inlineKeyboardButton2.setCallbackData(callBackData3);
+        inlineKeyboardButton3.setText(txt4);
+        inlineKeyboardButton3.setCallbackData(callBackData4);
+        rowInline.add(inlineKeyboardButton);
+        rowInline.add(inlineKeyboardButton1);
+        rowInline.add(inlineKeyboardButton2);
+        rowInline.add(inlineKeyboardButton3);
         keys.add(rowInline);
         inlineKeyboardMarkup.setKeyboard(keys);
         try {
