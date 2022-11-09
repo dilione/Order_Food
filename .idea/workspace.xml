@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fc9641-2316-4031-ab2f-43e46a63fd9e" name="Changes" comment="upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/MyBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -134,7 +129,7 @@
       <workItem from="1667825778955" duration="688000" />
       <workItem from="1667879123345" duration="680000" />
       <workItem from="1667883285499" duration="10342000" />
-      <workItem from="1667903709241" duration="5787000" />
+      <workItem from="1667903709241" duration="7197000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1667825893927</created>
