@@ -1,0 +1,207 @@
+[
+  {
+    "chatId": 23,
+    "name": "erw",
+    "products": [
+      {
+        "name": "PIZZA",
+        "type": "fast",
+        "price": 63000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_2.jpg",
+        "content": "\u0027PIZZA\u0027 \n\n PIZZA 🍕 \n \n narxi: 63000"
+      },
+      {
+        "name": "HotDOG",
+        "type": "fast",
+        "price": 26000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_3.jpg",
+        "content": "\u0027HotDOG\u0027 \n HotDOG 🌭 \n \n narxi: 26000"
+      },
+      {
+        "name": "GamburGer",
+        "type": "fast",
+        "price": 25000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_4.jpg",
+        "content": "\u0027GamburGer\u0027 \n GamburGer 🍔 \n \n narxi: 25000"
+      },
+      {
+        "name": "To\u0027plam",
+        "type": "fast",
+        "price": 99000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_6.jpg",
+        "content": "To\u0027plam \n \u0027To\u0027plam\u0027 🍱\n 2ta Gamburger 🍔\n KFC 🍗 va Chipslar 🍟 "
+      },
+      {
+        "name": "Non",
+        "type": "non",
+        "price": 4000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_7.jpg",
+        "content": "Non\n \u0027Non\u0027 🥐 \n \n narxi: 4000"
+      },
+      {
+        "name": "Sho\u0027rva",
+        "type": "milliy",
+        "price": 23000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_8.jpg",
+        "content": "Sho\u0027rva\n \u0027Sho\u0027rva\u0027 🍲 \n \n narxi: 23000"
+      },
+      {
+        "name": "Somsa",
+        "type": "milliy",
+        "price": 7000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_9.jpg",
+        "content": "Somsa \n \u0027Somsa\u0027 \n \n narxi: 7000"
+      },
+      {
+        "name": "Shilpildoq",
+        "type": "milliy",
+        "price": 56000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_10.jpg",
+        "content": "Shilpildoq \n \u0027Shilpildoq\u0027 \n \n narxi: 56000"
+      },
+      {
+        "name": "QozonKabob",
+        "type": "milliy",
+        "price": 42000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_11.jpg",
+        "content": "Qazon Kabob \n \u0027Qazon Kabob\u0027 \n \n narxi: 42000"
+      },
+      {
+        "name": "Lag\u0027mon",
+        "type": "milliy",
+        "price": 23000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_12.jpg",
+        "content": "Lag\u0027mon \n \u0027Lag\u0027mon\u0027 🍜 \n \n narxi: 23000"
+      },
+      {
+        "name": "Osh",
+        "type": "milliy",
+        "price": 25000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_13.jpg",
+        "content": "Osh \n \u0027Osh\u0027 \n \n narxi: 25000"
+      },
+      {
+        "name": "Shashlik",
+        "type": "milliy",
+        "price": 18000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_14.jpg",
+        "content": "Shashlik \n \u0027Shashlik\u0027 \n \n narxi: 18000"
+      },
+      {
+        "name": "Oliviya",
+        "type": "salat",
+        "price": 18000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_15.jpg",
+        "content": "Oliviya salat \n \u0027Oliviya salti\u0027 \n \n narxi: 18000"
+      },
+      {
+        "name": "Barbikiu",
+        "type": "milliy",
+        "price": 28000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_16.jpg",
+        "content": "Barbikiu \n \u0027Barbikiu\u0027 \n \n narxi: 28000"
+      },
+      {
+        "name": "ChickenSalat",
+        "type": "salat",
+        "price": 22000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_22.jpg",
+        "content": "Chicken Salat \n \u0027Chicken salat\u0027 \n \n narxi: 20000"
+      },
+      {
+        "name": "Salat",
+        "type": "salat",
+        "price": 12000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_23.jpg",
+        "content": "Salat \n \u0027Salat\u0027 🍅 \n \n narxi: 12000"
+      },
+      {
+        "name": "SmokedSalat",
+        "type": "salat",
+        "price": 23000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_25.jpg",
+        "content": "Smoked Salad \n \u0027Smoked\u0027 \n \n narxi: 23000"
+      },
+      {
+        "name": "Cofe",
+        "type": "ichimlik",
+        "price": 5000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_26.jpg",
+        "content": "Cofe ☕️\n \n narxi: 5000"
+      },
+      {
+        "name": "Choy",
+        "type": "ichimlik",
+        "price": 2000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_27.jpg",
+        "content": "Choy 🫖 \n \n narxi: 2000"
+      },
+      {
+        "name": "Pepsi",
+        "type": "ichimlik",
+        "price": 3500.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_28.jpg",
+        "content": "Pepsi 🥃 \n \n narxi: 3500"
+      },
+      {
+        "name": "CocaCola",
+        "type": "ichimlik",
+        "price": 3500.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_29.jpg",
+        "content": "CocaCola 🥃 \n \n narxi: 3500"
+      },
+      {
+        "name": "Lavash",
+        "type": "fast",
+        "price": 24000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_30.jpg",
+        "content": "Lavash \n \u0027Lavash\u0027 🌯 \n \n narxi: 24000"
+      },
+      {
+        "name": "Sandwich",
+        "type": "fast",
+        "price": 18000.0,
+        "amount": 1,
+        "url": "https://api.telegram.org/file/bot5419150140:AAGDeNrHa_xZz8vZ__40z2XPYdBBXKOhT9o/photos/file_31.jpg",
+        "content": "Sandwich \n \u0027Sandwich\u0027 🥪 \n \n narxi: 18000"
+      },
+      {
+        "name": "werty",
+        "price": 345.0,
+        "amount": 0
+      },
+      {
+        "name": "kjhgf",
+        "price": 34567.0,
+        "amount": 0
+      },
+      {
+        "name": "erfg",
+        "price": 34567.0,
+        "amount": 0
+      }
+    ]
+  }
+]
